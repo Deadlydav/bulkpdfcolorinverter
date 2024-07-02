@@ -41,7 +41,7 @@ Execute the script:
 
 bash
 
-    python invert_pdf_colors.py
+    python3 bulkpdfinverter.py
 
     The script will process each PDF file in the input_folder, invert the colors of each page, and save the processed PDFs in corresponding subfolders within the output_folder.
 
