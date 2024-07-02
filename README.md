@@ -21,7 +21,7 @@ Usage
 
     bash
 
-git clone https://github.com/your-username/pdf-color-inverter.git
+git clone https://github.com/Deadlydav/bulkpdfcolorinverter.git
 cd pdf-color-inverter
 
 Run the script:
