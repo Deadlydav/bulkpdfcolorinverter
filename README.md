@@ -34,7 +34,7 @@ pip install PyMuPDF pillow PyPDF2
 
 ## Usage
 
-1. Modify the input_folder and output_folder variables at the end of the invert_pdf_colors.py to specify your input PDF directory and desired output directory.
+1. Modify the input_folder and output_folder variables at the end of the bulkpdfinverter.py to specify your input PDF directory and desired output directory.
 ```
     # Define input and output directories
     input_folder = '/path/to/your/input/folder'
