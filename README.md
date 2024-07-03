@@ -1,6 +1,6 @@
 # BULK PDF Color Inverter
 
-This Python script automates the process of inverting colors in PDF documents, tailored for text-heavy or image-heavy pages.
+This Python script automates the process of inverting colors in PDF documents, tailored for text-heavy or image-heavy pages giving a Dark Mode feeling
 
 ## Features
 
