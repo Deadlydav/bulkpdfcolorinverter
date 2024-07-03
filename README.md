@@ -37,13 +37,8 @@ pip install PyMuPDF pillow PyPDF2
 1. Modify the input_folder and output_folder variables at the end of the invert_pdf_colors.py to specify your input PDF directory and desired output directory.
 ```
     # Define input and output directories
-        linux
-        input_folder_linux = '/media/user/whateverinput'
-        output_folder_linux = '/media/user/whateveroutput'
-
-        windows
-        input_folder_windows = r'C:\Users\user\whateverinput'
-        output_folder_windows = r'C:\Users\user\whateveroutput'
+    input_folder = '/path/to/your/input/folder'
+    output_folder = '/path/to/your/output/folder'
 ```
 
 3. Run the script:
