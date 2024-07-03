@@ -1,4 +1,4 @@
-# PDF Color Inverter
+# BULK PDF Color Inverter
 
 This Python script automates the process of inverting colors in PDF documents, tailored for text-heavy or image-heavy pages.
 
