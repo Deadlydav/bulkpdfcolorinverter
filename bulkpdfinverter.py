@@ -103,8 +103,8 @@ def process_pdfs_in_directory(input_folder, output_folder, dpi=300, contrast_fac
 
 if __name__ == "__main__":
     # Define input and output directories
-    input_folder = '/media/adminis/Nouveau volume/usbback/alire'
-    output_folder = '/media/adminis/Nouveau volume/usbback/invertedtestreal'
+    input_folder = '/path/to/your/input/folder'
+    output_folder = '/path/to/your/output/folder'
     
     # Invert colors of PDFs from input folder and save to output folder
     process_pdfs_in_directory(input_folder, output_folder, dpi=300, contrast_factor=1.5)
