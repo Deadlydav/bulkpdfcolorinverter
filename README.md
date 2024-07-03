@@ -1,60 +1,78 @@
-PDF Color Inverter
+# PDF Color Inverter
 
-This Python script allows you to invert the colors of PDF documents. It converts each page of a PDF into an image, inverts the colors of the image, and then converts it back to PDF format.
-Requirements
+This Python script automates the process of inverting colors in PDF documents, tailored for text-heavy or image-heavy pages.
 
-    Python 3.x
-    PyMuPDF (fitz)
-    Pillow (PIL fork)
-    PyPDF2
-    ReportLab
+## Features
 
-Install dependencies using pip:
+- **Color Inversion**: Efficiently inverts colors of PDF pages.
+- **Text and Image Detection**: Differentiates between text-heavy and image-heavy pages for optimal processing.
+- **Multi-threaded Processing**: Uses concurrent threads for faster processing of multiple PDF files.
+- **Automatic PDF Conversion**: Converts processed pages back into PDF format without converting everything into images first, saving space.
 
-bash
+## Requirements
 
-pip install PyMuPDF Pillow PyPDF2 reportlab
+- Python 3.6+
+- PyMuPDF (`fitz`) library
+- Pillow (`PIL`) library
+- PyPDF2 library
 
-Usage
+## Installation
 
-    Clone the repository:
-
-    bash
+1. Clone the repository:
+```
 
 git clone https://github.com/Deadlydav/bulkpdfcolorinverter.git
-cd pdf-color-inverter
 
-Run the script:
+```
 
-Modify the input_folder and output_folder variables in invert_pdf_colors.py to specify your input PDF directory and desired output directory.
+3. Install the required libraries:
+```
 
-python
+pip install PyMuPDF pillow PyPDF2
 
-# Define input and output directories
-input_folder = '/path/to/your/input/folder'
-output_folder = '/path/to/your/output/folder'
+```
 
-# Invert colors of PDFs from input folder and save to output folder with a DPI suitable for a Kindle
-invert_pdf_colors(input_folder, output_folder, dpi=300)  # Use 167 if targeting older models
+## Usage
 
-Execute the script:
+1. Modify the input_folder and output_folder variables at the end of the invert_pdf_colors.py to specify your input PDF directory and desired output directory.
+```
+    # Define input and output directories
+        linux
+        input_folder_linux = '/media/user/whateverinput'
+        output_folder_linux = '/media/user/whateveroutput'
 
-bash
+        windows
+        input_folder_windows = r'C:\Users\user\whateverinput'
+        output_folder_windows = r'C:\Users\user\whateveroutput'
+```
 
-    python3 bulkpdfinverter.py
+3. Run the script:
+```
 
-    The script will process each PDF file in the input_folder, invert the colors of each page, and save the processed PDFs in corresponding subfolders within the output_folder.
+python3 invert_pdf_colors.py
 
-Customization
+```
 
-    DPI Setting: Adjust the dpi parameter in invert_pdf_colors.py for different output quality. Higher DPI values result in better quality but larger file sizes.
-    Output Subfolders: The script preserves the subfolder structure of your input PDF directory in the output directory.
 
-Notes
+3. Inverted PDFs will be saved in the `output` folder structure.
 
-    Ensure your input PDFs do not contain password protection or encryption, as this script does not handle protected PDFs.
-    The script assumes input PDFs are standard and not malformed; unexpected PDF structures may cause errors.
+## Configuration
 
-License
+Adjust the following parameters in `invert_pdf_colors.py` as needed:
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- `dpi`: DPI resolution for image conversion.
+- `contrast_factor`: Adjusts contrast enhancement for image-heavy pages.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [PyMuPDF](https://pypi.org/project/PyMuPDF/)
+- [Pillow](https://pypi.org/project/Pillow/)
+- [PyPDF2](https://pypi.org/project/PyPDF2/)
+
+## Contributing
+
+Pull requests are welcome.
