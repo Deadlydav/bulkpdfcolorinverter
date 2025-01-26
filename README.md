@@ -1,4 +1,4 @@
-# BULK PDF Color Inverter
+    # BULK PDF Color Inverter
 
 This Python script automates the process of inverting colors in PDF documents giving a Dark Mode feeling. Works great for kindle like device that don't offer a dark mode. It also keeps your folder structure for convenience
 
